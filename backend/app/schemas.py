@@ -244,3 +244,27 @@ class SettlementEntry(BaseModel):
     field_5: str | None = None  # 已收金额
     field_6: str | None = None  # 开票状态
     field_7: str | None = None  # 结算状态
+
+class InspectionEntry(BaseModel):
+    """巡检计划明细结构。"""
+
+    field_0: str | None = None  # 计划编号
+    field_1: str | None = None  # 任务编号
+    field_2: str | None = None  # 巡检区域
+    field_3: str | None = None  # 巡检人员
+    field_4: str | None = None  # 计划巡检日
+    field_5: str | None = None  # 完成日期
+    field_6: str | None = None  # 隐患数量
+    field_7: str | None = None  # 当前状态
+
+class HazardEntry(BaseModel):
+    """隐患整改明细结构。"""
+
+    field_0: str | None = None  # 隐患编号
+    field_1: str | None = None  # 关联任务
+    field_2: str | None = None  # 隐患位置
+    field_3: str | None = None  # 隐患描述
+    field_4: str | None = None  # 整改责任人
+    field_5: str | None = None  # 整改期限
+    field_6: str | None = None  # 登记次数
+    field_7: str | None = None  # 整改状态

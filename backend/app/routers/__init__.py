@@ -24,5 +24,7 @@ from app.routers import qc as router_qc
 from app.routers import complaint as router_complaint
 from app.routers import stockin as router_stockin
 from app.routers import settlement as router_settlement
+from app.routers import inspection as router_inspection
+from app.routers import hazard as router_hazard
 
-ROUTERS = [router_sample, router_client, router_project, router_task, router_execute, router_result, router_review, router_instrument, router_calibration, router_reagent, router_consume, router_environment, router_report, router_issue, router_qc, router_complaint, router_stockin, router_settlement]
+ROUTERS = [router_sample, router_client, router_project, router_task, router_execute, router_result, router_review, router_instrument, router_calibration, router_reagent, router_consume, router_environment, router_report, router_issue, router_qc, router_complaint, router_stockin, router_settlement, router_inspection, router_hazard]
