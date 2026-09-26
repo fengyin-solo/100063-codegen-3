@@ -13,6 +13,7 @@ const Calibration = () => import('@/views/calibration/index.vue')
 const Reagent = () => import('@/views/reagent/index.vue')
 const Consume = () => import('@/views/consume/index.vue')
 const Environment = () => import('@/views/environment/index.vue')
+const Inspection = () => import('@/views/inspection/index.vue')
 const Report = () => import('@/views/report/index.vue')
 const Issue = () => import('@/views/issue/index.vue')
 const Qc = () => import('@/views/qc/index.vue')
@@ -36,6 +37,7 @@ const router = createRouter({
     { path: '/reagent', name: 'reagent', component: Reagent },
     { path: '/consume', name: 'consume', component: Consume },
     { path: '/environment', name: 'environment', component: Environment },
+    { path: '/inspection', name: 'inspection', component: Inspection },
     { path: '/report', name: 'report', component: Report },
     { path: '/issue', name: 'issue', component: Issue },
     { path: '/qc', name: 'qc', component: Qc },
